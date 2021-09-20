@@ -6,6 +6,6 @@ services:
       POSTGRES_PASSWORD: pc25cw
       POSTGRES_USER: postgres
     volumes:
-      - ./dev/projetos/database:/var/lib/postgresql/data
+      - ./db-init:/docker-entrypoint-initdb.d/
     ports:
       - '5432:5432'

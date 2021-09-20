@@ -1,0 +1,1 @@
+echo "SELECT 'CREATE DATABASE gazin' WHERE NOT EXISTS (SELECT FROM pg_database WHERE datname = 'gazin')\gexec" | psql
